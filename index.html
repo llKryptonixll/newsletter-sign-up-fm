@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="app.js" defer></script>
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+
+  <main id="main_content">
+    <section class="form_section section">
+      <article class="form_article">
+        <h1>Stay updated!</h1>
+        <p class="sub_header">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="form_list">
+          <li>
+            <p>
+              <img src="assets/images/icon-list.svg" alt="list-icon">
+              <span>Product discovery and building what matters</span>
+            </p>
+          </li>
+          <li>
+            <p>
+              <img src="assets/images/icon-list.svg" alt="list-icon">
+              <span>Measuring to ensure updates are a success</span>
+            </p>
+          </li>
+          <li>
+            <p>
+              <img src="assets/images/icon-list.svg" alt="list-icon">
+              <span>And much more!</span>
+            </p>
+          </li>
+        </ul>
+      </article>
+
+      <form class="subscribe_form" action="">
+        <div class="input_wrapper">
+          <label for="email">Email address</label>
+          <span id="error_message" class="input_error">Valid email required</span>
+          <input id="email_input" class="email_input" placeholder="email@company.com" type="text" name="email">
+        </div>
+        <button id="subscribe_form_btn" class="button_main" type="submit">Subscribe to monthly newsletter</button>
+      </form>
+    </section>
+
+    <section class="img_section section">
+      <img class="desktop_img" src="assets/images/illustration-sign-up-desktop.svg" alt="illustration-image">
+      <img class="mobile_img" src="assets/images/illustration-sign-up-mobile.svg" alt="illustration-image">
+    </section>
+
+    <section id="sucess_section" class="success_section">
+      <div class="_wrapper">
+        <img src="assets/images/icon-success.svg" alt="success-icon">
+        <p class="header">Thanks for subscribing!</p>
+        <p class="text">
+          A confirmation email has been sent to <span id="user_email" class="email_span"></span>
+          Please open it and click the button inside to confirm your subscription.
+        </p>
+      </div>
+      <button id="dismiss_button" class="button_main">Dismiss message</button>
+    </section>
+  </main>
+
+</body>
+</html>
