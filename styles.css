@@ -63,15 +63,14 @@ main{
     display: grid;
     gap: 30px;
 }
-
-.form_article{
-    display: grid;
-    gap: 30px;
-}
-.form_article h1{
+.form_section header h1{
     color: var(--dark_slate_grey);
     font-size: 3.5rem;
     font-weight: bold;
+}
+.form_article{
+    display: grid;
+    gap: 30px;
 }
 .form_article .sub_header{
     width: 90%;
